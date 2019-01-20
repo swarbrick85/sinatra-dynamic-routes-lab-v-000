@@ -14,10 +14,12 @@ class App < Sinatra::Base
 
   get "/say/:number/:phrase" do
     a = params[:number].to_i 
+    b = []
       a.times do 
-    puts "#{params[:phrase]}"
+    b << "#{params[:phrase]}"
    end
-   binding.pry
+   b
+     
   end
   
 end
