@@ -19,16 +19,9 @@ class App < Sinatra::Base
     b << "#{params[:phrase]}"
    end
    b
-     
   end
   
-  get "/say/:number/:phrase" do
-    a = params[:number].to_i 
-    b = []
-      a.times do 
-    b << "#{params[:phrase]}"
-   end
-   b
-     
+  get "/say/:word1/:word2/:word3/:word4/:word5" do
+    "params[:word1] params[:word1] params[:word1] params[:word1] params[:word1]."
   end
 end
