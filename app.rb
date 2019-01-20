@@ -12,4 +12,9 @@ class App < Sinatra::Base
     "#{a*a}!"
   end
 
+  get "/say/:number/:phrase" do
+    params[:number].to_i.times {
+    "#{params[:name].reverse}!"
+    }
+  end
 end
