@@ -27,7 +27,15 @@ class App < Sinatra::Base
   
   get "/:operation/:number1/:number2" do
     binding.pry
-    a = params[:number].to_i 
-    "#{a*a}!"
+    a = params[:operation]
+    b = params[:number1].to_i
+    c = params[:number2].to_i
+    if a == "add"
+      
+    elsif a == "subtract"
+    
+    elsif a == "multiply"
+    
+    elsif a == "divide"
   end
 end
