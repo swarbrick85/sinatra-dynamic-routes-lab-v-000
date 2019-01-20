@@ -26,7 +26,6 @@ class App < Sinatra::Base
   end
   
   get "/:operation/:number1/:number2" do
-    binding.pry
     a = params[:operation]
     b = params[:number1].to_i
     c = params[:number2].to_i
@@ -37,5 +36,7 @@ class App < Sinatra::Base
     elsif a == "multiply"
     
     elsif a == "divide"
+    
+    end
   end
 end
